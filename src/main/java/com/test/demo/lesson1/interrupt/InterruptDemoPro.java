@@ -1,4 +1,4 @@
-package com.test.demo.interrupt;
+package com.test.demo.lesson1.interrupt;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package com.test.demo.request;
+package com.test.demo.lesson1.request;
 
 /**
  * @Classname Request

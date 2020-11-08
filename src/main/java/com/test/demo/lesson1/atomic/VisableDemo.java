@@ -1,25 +1,26 @@
-package com.test.demo.interrupt;
+package com.test.demo.lesson1.atomic;
+
+import java.util.concurrent.TimeUnit;
 
 /**
- * @Classname VolatileDemo
+ * @Classname RequestProcessor
  * @Description TODO
- * @Date 2020/11/1 0001 下午 13:28
+ * @Date 2020/11/1 0001 下午 12:26
  * @Created by Administrator
  */
-public class VolatileDemo {
+public class VisableDemo {
 
     private volatile static boolean stop=false;
 
     public static void main(String[] args) throws InterruptedException {
         Thread thread=new Thread(()->{
-            int i = 0;
+            int i=0;
             while(!stop){
                 i++;
             }
         });
         thread.start();
-        System.out.println("begin start thread");
-        Thread.sleep(1000);
+        TimeUnit.SECONDS.sleep(1);
         stop=true;
     }
 }

@@ -1,4 +1,4 @@
-package com.test.demo.atomic;
+package com.test.demo.lesson1.atomic;
 
 /**
  * @Classname RequestProcessor
@@ -23,6 +23,6 @@ public class AtomicDemo {
             new Thread(AtomicDemo::inc).start();
         }
         Thread.sleep(4000);
-        System.out.println("y运行结果："+count);
+        System.out.println("运行结果："+count);
     }
 }
