@@ -1,7 +1,6 @@
-package com.test.demo.lesson4;
+package com.test.demo.lesson5;
 
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
